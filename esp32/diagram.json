@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "author": "Smart Pump Monitoring",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 120,
+      "left": 80,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot_pressure",
+      "top": 20,
+      "left": -160,
+      "attrs": { "label": "Pressure (GPIO 34)" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot_current",
+      "top": 140,
+      "left": -160,
+      "attrs": { "label": "Current (GPIO 35)" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot_vibration",
+      "top": 260,
+      "left": -160,
+      "attrs": { "label": "Vibration (GPIO 32)" }
+    }
+  ],
+  "connections": [
+    [ "pot_pressure:SIG",   "esp:34",    "cyan",   [] ],
+    [ "pot_pressure:VCC",   "esp:3V3",   "red",    [] ],
+    [ "pot_pressure:GND",   "esp:GND.1", "black",  [] ],
+    [ "pot_current:SIG",    "esp:35",    "orange", [] ],
+    [ "pot_current:VCC",    "esp:3V3",   "red",    [] ],
+    [ "pot_current:GND",    "esp:GND.1", "black",  [] ],
+    [ "pot_vibration:SIG",  "esp:32",    "green",  [] ],
+    [ "pot_vibration:VCC",  "esp:3V3",   "red",    [] ],
+    [ "pot_vibration:GND",  "esp:GND.1", "black",  [] ]
+  ],
+  "dependencies": {}
+}

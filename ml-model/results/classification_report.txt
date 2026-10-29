@@ -1,0 +1,14 @@
+SMART PUMP FAULT PREDICTION — DNN CLASSIFICATION REPORT
+========================================================
+
+                           precision    recall  f1-score   support
+
+           Combined Fault     1.0000    1.0000    1.0000       105
+Excessive Vibration Fault     1.0000    1.0000    1.0000       105
+      High Pressure Fault     1.0000    1.0000    1.0000       105
+                   Normal     1.0000    1.0000    1.0000       105
+        Overcurrent Fault     1.0000    1.0000    1.0000       105
+
+                 accuracy                         1.0000       525
+                macro avg     1.0000    1.0000    1.0000       525
+             weighted avg     1.0000    1.0000    1.0000       525

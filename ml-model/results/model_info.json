@@ -1,0 +1,29 @@
+{
+  "model_type": "Deep Neural Network (Sequential DNN)",
+  "input_features": [
+    "pressure",
+    "current",
+    "vibration"
+  ],
+  "number_of_classes": 5,
+  "class_names": [
+    "Combined Fault",
+    "Excessive Vibration Fault",
+    "High Pressure Fault",
+    "Normal",
+    "Overcurrent Fault"
+  ],
+  "training_samples": 2450,
+  "validation_samples": 525,
+  "test_samples": 525,
+  "architecture_summary": "Model: \"Smart_Pump_DNN_Classifier\"\n+--------------------------------------------------------------------------+\n| Layer (type)                    | Output Shape           |       Param # |\n|---------------------------------+------------------------+---------------|\n| dense_1 (Dense)                 | (None, 64)             |           256 |\n|---------------------------------+------------------------+---------------|\n| bn_1 (BatchNormalization)       | (None, 64)             |           256 |\n|---------------------------------+------------------------+---------------|\n| dropout_1 (Dropout)             | (None, 64)             |             0 |\n|---------------------------------+------------------------+---------------|\n| dense_2 (Dense)                 | (None, 32)             |         2,080 |\n|---------------------------------+------------------------+---------------|\n| bn_2 (BatchNormalization)       | (None, 32)             |           128 |\n|---------------------------------+------------------------+---------------|\n| dropout_2 (Dropout)             | (None, 32)             |             0 |\n|---------------------------------+------------------------+---------------|\n| dense_3 (Dense)                 | (None, 16)             |           528 |\n|---------------------------------+------------------------+---------------|\n| output_softmax (Dense)          | (None, 5)              |            85 |\n+--------------------------------------------------------------------------+\n Total params: 9,617 (37.57 KB)\n Trainable params: 3,141 (12.27 KB)\n Non-trainable params: 192 (768.00 B)\n Optimizer params: 6,284 (24.55 KB)\n",
+  "training_configuration": {
+    "epochs_total": 75,
+    "epochs_completed": 75,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "random_seed": 42,
+    "optimizer": "Adam",
+    "loss_function": "sparse_categorical_crossentropy"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "test_loss": 1e-06,
+  "test_accuracy": 1.0,
+  "weighted_precision": 1.0,
+  "weighted_recall": 1.0,
+  "weighted_f1_score": 1.0,
+  "macro_precision": 1.0,
+  "macro_recall": 1.0,
+  "macro_f1_score": 1.0,
+  "total_test_samples": 525,
+  "confusion_matrix": [
+    [
+      105,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      105,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      105,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      105,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      105
+    ]
+  ],
+  "class_labels": [
+    "Combined Fault",
+    "Excessive Vibration Fault",
+    "High Pressure Fault",
+    "Normal",
+    "Overcurrent Fault"
+  ],
+  "per_class_metrics": {
+    "Combined Fault": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 105
+    },
+    "Excessive Vibration Fault": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 105
+    },
+    "High Pressure Fault": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 105
+    },
+    "Normal": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 105
+    },
+    "Overcurrent Fault": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 105
+    }
+  }
+}
